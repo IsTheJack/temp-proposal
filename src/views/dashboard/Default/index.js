@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 // material-ui
-import { Grid } from '@mui/material';
+import { Grid, Typography, TextField, Box } from '@mui/material';
 
 // project imports
 import EarningCard from './EarningCard';
@@ -11,6 +11,7 @@ import TotalIncomeDarkCard from './TotalIncomeDarkCard';
 import TotalIncomeLightCard from './TotalIncomeLightCard';
 import TotalGrowthBarChart from './TotalGrowthBarChart';
 import { gridSpacing } from 'store/constant';
+import MainCard from 'ui-component/cards/MainCard';
 
 // ==============================|| DEFAULT DASHBOARD ||============================== //
 
@@ -22,6 +23,56 @@ const Dashboard = () => {
 
     return (
         <Grid container spacing={gridSpacing}>
+            <Grid item xs={12}>
+                <Grid container spacing={gridSpacing}>
+                    <Grid item xs={12}>
+                        <MainCard>
+                            <Grid container spacing={gridSpacing}>
+                                <Grid item md={8} xs={12}>
+                                    <Typography variant="h2" sx={{ mb: 2 }}>
+                                        Good Evening, Conor O'Toole
+                                    </Typography>
+
+                                    <Typography variant="subtitle1" fontSize={16} sx={{ mb: 2 }}>
+                                        Welcome to your dashboard for <strong>Paddy's Pizza.</strong> <br />
+                                        Check out these personalized tips and performance statistics from LoyLap.
+                                    </Typography>
+                                </Grid>
+                                <Grid item md={4} xs={12}>
+                                    <Box sx={{ px: 2, pt: 0.25 }}>
+                                        <TextField
+                                            id="outlined-select-currency-native"
+                                            select
+                                            fullWidth
+                                            onChange={() => null}
+                                            SelectProps={{
+                                                native: true
+                                            }}
+                                        >
+                                            <option value="Test">Franchise view</option>
+                                        </TextField>
+                                    </Box>
+
+                                    <Box sx={{ mt: 2, px: 2, pt: 0.25 }}>
+                                        <TextField
+                                            id="outlined-select-currency-native"
+                                            select
+                                            fullWidth
+                                            onChange={() => null}
+                                            SelectProps={{
+                                                native: true
+                                            }}
+                                        >
+                                            <option value="Test">All Branches</option>
+                                        </TextField>
+                                    </Box>
+                                </Grid>
+                            </Grid>
+                        </MainCard>
+                    </Grid>
+                </Grid>
+            </Grid>
+
             <Grid item xs={12}>
                 <Grid container spacing={gridSpacing}>
                     <Grid item lg={4} md={6} sm={6} xs={12}>

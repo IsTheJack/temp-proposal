@@ -12,7 +12,7 @@ const other = {
     children: [
         {
             id: 'sample-page',
-            title: 'Sample Page',
+            title: 'Preview Ordering App',
             type: 'item',
             url: '/sample-page',
             icon: icons.IconBrandChrome,
@@ -20,7 +20,7 @@ const other = {
         },
         {
             id: 'documentation',
-            title: 'Documentation',
+            title: 'Help',
             type: 'item',
             url: 'https://codedthemes.gitbook.io/berry/',
             icon: icons.IconHelp,

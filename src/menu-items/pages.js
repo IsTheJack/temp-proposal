@@ -1,41 +1,44 @@
 // assets
-import { IconKey } from '@tabler/icons';
+import { IconReportMoney, IconSettingsAutomation, IconReportAnalytics } from '@tabler/icons';
 
 // constant
 const icons = {
-    IconKey
+    IconReportMoney,
+    IconReportAnalytics,
+    IconSettingsAutomation
 };
 
 // ==============================|| EXTRA PAGES MENU ITEMS ||============================== //
 
 const pages = {
-    id: 'pages',
-    title: 'Pages',
-    caption: 'Pages Caption',
+    id: 'reports',
+    title: 'Reports',
+    caption: 'Reports',
     type: 'group',
     children: [
         {
-            id: 'authentication',
-            title: 'Authentication',
-            type: 'collapse',
-            icon: icons.IconKey,
-
-            children: [
-                {
-                    id: 'login3',
-                    title: 'Login',
-                    type: 'item',
-                    url: '/pages/login/login3',
-                    target: true
-                },
-                {
-                    id: 'register3',
-                    title: 'Register',
-                    type: 'item',
-                    url: '/pages/register/register3',
-                    target: true
-                }
-            ]
+            id: 'Transactions',
+            title: 'Transactions',
+            type: 'item',
+            url: '/utils/util-typography',
+            icon: icons.IconReportMoney,
+            breadcrumbs: false
+        },
+        {
+            id: 'Order Ahead',
+            title: 'Order Ahead',
+            type: 'item',
+            url: '/utils/util-typography',
+            icon: icons.IconReportAnalytics,
+            breadcrumbs: false
+        },
+        {
+            id: 'Automated Reports',
+            title: 'Automated Reports',
+            type: 'item',
+            url: '/utils/util-typography',
+            icon: icons.IconSettingsAutomation,
+            breadcrumbs: false
         }
     ]
 };

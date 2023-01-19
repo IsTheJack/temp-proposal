@@ -46,6 +46,11 @@ export default function themeTypography(theme) {
             fontWeight: 400,
             color: theme.darkTextSecondary
         },
+        subtitle2Light: {
+            fontSize: '0.75rem',
+            fontWeight: 400,
+            color: theme.darkTextSecondary
+        },
         caption: {
             fontSize: '0.75rem',
             color: theme.darkTextSecondary,

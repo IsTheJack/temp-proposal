@@ -109,10 +109,10 @@ const MenuCard = () => {
                             sx={{ mt: 0 }}
                             primary={
                                 <Typography variant="subtitle1" sx={{ color: theme.palette.primary[800] }}>
-                                    Get Extra Space
+                                    Almost done!
                                 </Typography>
                             }
-                            secondary={<Typography variant="caption"> 28/23 GB</Typography>}
+                            secondary={<Typography variant="caption"> Finish your merchant setup</Typography>}
                         />
                     </ListItem>
                 </List>
